@@ -7,13 +7,13 @@
 
 import random
 
-# list = []
-# a = int(input("Введите количество элементов: "))
-# for i in range(a):
-#     list.append(random.randint(1, 20))
+list = []
+a = int(input("Введите количество элементов: "))
+for i in range(a):
+    list.append(random.randint(1, 20))
 
 result_list = []
-list = [int(i) for i in input("Введите список чисел: ").split()]
+# list = [int(i) for i in input("Введите список чисел: ").split()]
 for i in range(1, len(list)):
     if list[i] > list[i - 1]:
         (result_list.append(list[i]))
